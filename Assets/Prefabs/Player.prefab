@@ -80,7 +80,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -5601987
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 101
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: a94bf141bd2044c4399e321445c83112, type: 3}
@@ -141,6 +141,7 @@ GameObject:
   - component: {fileID: 3466140340262293966}
   - component: {fileID: 2612830850636459283}
   - component: {fileID: 5097844450124244678}
+  - component: {fileID: -8531266470709734777}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -179,7 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 1051642212
+  GlobalObjectIdHash: 303970555
   InScenePlacedSourceGlobalObjectIdHash: 0
   DeferredDespawnTick: 0
   Ownership: 1
@@ -314,6 +315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ProjectileLauncher
   ShowTopMostFoldoutHeaderGroup: 1
   inputReader: {fileID: 11400000, guid: c8f81a00dd7c91d4aaa22b3dc2ccab0f, type: 2}
+  wallet: {fileID: -8531266470709734777}
   projectileSpawnPoint: {fileID: 6917267613627801281}
   serverProjectilePrefab: {fileID: 4322224915777802554, guid: e146f93d18247b54a8c232034743aba6, type: 3}
   clientProjectilePrefab: {fileID: 8353062023389509291, guid: 8f1288bafaeddf24b8de0428f45fc8dc, type: 3}
@@ -322,6 +324,7 @@ MonoBehaviour:
   projectileSpeed: 30
   fireRate: 0.75
   muzzleFlashDuration: 0.075
+  costToFire: 5
 --- !u!114 &2612830850636459283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -351,8 +354,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TankPlayer
   ShowTopMostFoldoutHeaderGroup: 1
-  cinemachineCamera: {fileID: 8735565731217113396}
+  virtualCamera: {fileID: 8735565731217113396}
+  <Health>k__BackingField: {fileID: 2612830850636459283}
+  <Wallet>k__BackingField: {fileID: -8531266470709734777}
   ownerPriority: 15
+--- !u!114 &-8531266470709734777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3402835609561575456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 311811840cbe74a499ed9ed69f33b7fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoinWallet
+  ShowTopMostFoldoutHeaderGroup: 1
+  TotalCoins:
+    m_InternalValue: 0
 --- !u!1 &4039868415069636868
 GameObject:
   m_ObjectHideFlags: 0
@@ -10353,7 +10373,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -5601987
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 90
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 1a838243856331f4681c559527ad5846, type: 3}
@@ -15583,7 +15603,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -5601987
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 100
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 8769e4453ce5bc3429cfba7d58fbef13, type: 3}
