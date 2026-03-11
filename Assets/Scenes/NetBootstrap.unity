@@ -181,6 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ApplicationController
   clientPrefab: {fileID: 5350671530293134932, guid: 2865202f184e1b44abab07adf63a9a62, type: 3}
   hostPrefab: {fileID: 5290848491587568839, guid: 003354d0df54f2746b262305b3ce7cff, type: 3}
+  playerPrefab: {fileID: 1027034672412367493, guid: 99ffc885d729f344fafa4cf3fa62e9eb, type: 3}
 --- !u!4 &450034826
 Transform:
   m_ObjectHideFlags: 0

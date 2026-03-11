@@ -60,6 +60,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 4334702360012154067}
   m_SourcePrefab: {fileID: 100100000, guid: 64bbfeca96b94ef4187fd5125a734fc4, type: 3}
+--- !u!114 &2281805518700244020 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7032278061336453504, guid: 64bbfeca96b94ef4187fd5125a734fc4, type: 3}
+  m_PrefabInstance: {fileID: 9096481406076063156}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4322224915777802554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16300aa54b454ad4bb28f12a2b07dd87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Projectile
 --- !u!1 &4322224915777802554 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5027865522974973070, guid: 64bbfeca96b94ef4187fd5125a734fc4, type: 3}
@@ -77,4 +88,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 900d4dd7b134ada48be3f722df63ae50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DealDamageOnContact
-  damage: 5
+  projectile: {fileID: 2281805518700244020}
+  damage: 10
