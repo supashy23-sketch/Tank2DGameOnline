@@ -486,8 +486,8 @@ MonoBehaviour:
   bodyTransform: {fileID: 3981323863493824560}
   rb: {fileID: 619801047587718147}
   dustCloud: {fileID: 9051282862498859942}
-  movementSpeed: 4
-  turningRate: 30
+  movementSpeed: 40
+  turningRate: 300
   particleEmissionValue: 10
 --- !u!50 &619801047587718147
 Rigidbody2D:
